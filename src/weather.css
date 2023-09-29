@@ -1,0 +1,58 @@
+/* src/Weather.css */
+.weather-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .weather-input {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .weather-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .weather-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .weather-info {
+    margin-top: 20px;
+  }
+  
+  .weather-description {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+
+  .weather-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Add a slight scale effect */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  }
+
+  
+.weather-info {
+    margin-top: 20px;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s ease-in-out forwards; /* Animation */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
